@@ -11,7 +11,7 @@
 balance = 0
 count = 0
 ACTION = 50
-COMMISSION = 1.015
+COMMISSION = 0.015
 BONUS = 1.03
 TAX = 1.10
 MIN_FEE = 30
