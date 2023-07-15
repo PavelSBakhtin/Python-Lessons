@@ -72,7 +72,6 @@ while x < len(many):
         many.remove(many[x])
     else:
         x += 1
-print(friends)
 for s in many:
     for t in friends:
         if s in things[t]:
