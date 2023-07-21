@@ -8,8 +8,8 @@
 from pprint import pprint
 
 def grants_dict(names, pays, percents):
-    percents  = list(map(lambda x: float(x[:-1])/100, percents))
-    return {name: pay*percent for name, pay, percent in zip(names, pays, percents) }
+    percents = list(map(lambda x: float(x[:-1]) / 100, percents))
+    return {name: pay * percent for name, pay, percent in zip(names, pays, percents)}
 
 names = ['Иван', "Петр", "Михаил"]
 pays = [10000, 15000, 20000]
