@@ -24,4 +24,4 @@ for i in obj:
         result4[i] = 0
     result4[i] += 1
 
-print(result1, result2, result4, result3, sep = '\n')
+print(result1, result2, result4, result3, sep='\n')

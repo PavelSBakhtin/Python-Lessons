@@ -11,7 +11,7 @@ print(*[i+1 for i in range(len(my_list)) if my_list[i] % 2])
 # result = []
 
 # for i in range(len(my_list)):
-#     if  my_list[i] % 2:
+#     if my_list[i] % 2:
 #         result.append(i+1)
 
 # print(*result)

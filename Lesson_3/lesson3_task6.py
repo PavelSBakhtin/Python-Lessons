@@ -6,10 +6,10 @@
 
 words = input('Введите предложение >>> ').split()
 
-max_len = len(max(words, key = len))
+max_len = len(max(words, key=len))
 
 # for i in range(len(sorted(words))):
-#     print(f"{i+1}.{words[i].rjust(max_len+1, $)}") # $ - заполнитель
+#     print(f"{i + 1}.{words[i].rjust(max_len + 1, $)}")  # $ - заполнитель
 
 for i in range(len(words)):
-    print(f"{i+1}.{sorted(words)[i]:$>{max_len+1}}") # $ - заполнитель
+    print(f"{i + 1}.{sorted(words)[i]:$>{max_len + 1}}")  # $ - заполнитель

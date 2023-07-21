@@ -3,7 +3,8 @@
 
 from pprint import pprint
 
-my_tuple = (True, "String", 2, False, 5.16, 4-3j, [1, 4, 5], (3, 4, 6), {2, 5, 5, 7, 6}, {4, 7, 6}, 43, 'second')
+my_tuple = (True, "String", 2, False, 5.16, 4-3j,
+            [1, 4, 5], (3, 4, 6), {2, 5, 5, 7, 6}, {4, 7, 6}, 43, 'second')
 
 result_dict = {}
 
