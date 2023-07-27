@@ -2,15 +2,25 @@
 # Создайте файл, в котором вы импортируете встроенные
 # в модуль функции под псевдонимами. (3-7 строк импорта).
 
-import random as rnd
+from lesson6_task2 import guess_num # task 2
 
-a = rnd.randint(0, 10)
-print(a)
+guess_num(1, 10, 5) # task 2
 
-from random import randint as rnd_int
+# ####################################################
 
-b = rnd_int(0, 10)
-print(b)
+# # Примеры использования импортов:
 
-from sys import * # всё из модуля, не рекомендуется
-import os 
+# import random as rnd
+
+# a = rnd.randint(0, 10)
+# print(a)
+
+# from random import randint as rnd_int
+
+# b = rnd_int(0, 10)
+# print(b)
+
+# from sys import * # всё из модуля, не рекомендуется
+# import os 
+
+# ####################################################
