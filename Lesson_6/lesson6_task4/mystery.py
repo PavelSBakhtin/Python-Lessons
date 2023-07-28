@@ -1,5 +1,16 @@
 from random import choice
 
+_answers_counts = {}
+
+
+def results(question, count):
+    _answers_counts[question] = count
+
+
+def print_results():
+    print(*(f'Загадка: {key} отгадана за {value} попыток.' for key, value in _answers_counts.items()),
+          sep='\n')
+
 
 def quest(question, answers, attempts):
     count = 0
@@ -8,6 +19,7 @@ def quest(question, answers, attempts):
         print(question)
         answer = input('Ваш ответ: ')
         if answer in answers:
+            results(question, count)
             print(f'Победа! Угадал за {count} попыток.')
             break
         else:

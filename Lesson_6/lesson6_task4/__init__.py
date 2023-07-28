@@ -4,6 +4,6 @@
 # Программа возвращает номер попытки, с которой была
 # отгадана загадка или ноль, если попытки исчерпаны.
 
-from .mystery import quest, many_quests
+from .mystery import quest, many_quests, print_results
 
-__all__ = ['quest', 'many_quests']
+__all__ = ['quest', 'many_quests', 'print_results']

@@ -6,4 +6,7 @@
 # из защищённого словаря в удобном для чтения виде.
 # Для формирования результатов используйте генераторное выражение.
 
+from lesson6_task4 import many_quests, print_results
 
+many_quests(2)
+print_results()
