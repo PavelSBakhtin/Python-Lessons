@@ -3,8 +3,11 @@
 # в модуль функции под псевдонимами. (3-7 строк импорта).
 
 from lesson6_task2 import guess_num # task 2
+from lesson6_task4 import quest # task 4
 
-guess_num(1, 10, 5) # task 2
+# guess_num(1, 10, 5) # task 2
+quest('Сколько ног у муравья?', ['1', '2', '3', '4', '5', '6'], 3)
+
 
 # ####################################################
 
