@@ -4,4 +4,12 @@
 # Для преобразования строковых аргументов командной строки в числовые параметры используйте
 # генераторное выражение.
 
+from lesson6_task2 import guess_num
+from sys import argv
 
+guess_num(*(int(i) for i in argv[1:]))
+
+# В консоле:
+# cd Lesson_6/
+# python lesson6_task3.py 1 10 5
+# cd ..
