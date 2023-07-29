@@ -4,9 +4,11 @@
 
 from lesson6_task2 import guess_num # task 2
 from lesson6_task4 import quest # task 4
+from lesson6_task7 import check_date # task 7
 
 # guess_num(1, 10, 5) # task 2
-# quest('Сколько ног у муравья?', ['1', '2', '3', '4', '5', '6'], 3)
+# quest('Сколько ног у муравья?', ['1', '2', '3', '4', '5', '6'], 3) # task 4
+# print(check_date(input('Enter a date in the format DD.MM.YYYY - '))) # task 7
 
 
 # ####################################################
