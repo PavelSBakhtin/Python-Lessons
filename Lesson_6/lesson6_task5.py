@@ -2,6 +2,6 @@
 # Ключ словаря - загадка, значение - список с отгадками.
 # Функция в цикле вызывает загадывающую функцию, чтобы передать ей все свои загадки.
 
-from lesson6_task4 import many_quests
+from lesson6_modules import many_quests
 
 many_quests(2)

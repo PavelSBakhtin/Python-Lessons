@@ -1,3 +1,9 @@
+# Создайте модуль с функцией внутри.
+# Функция получает на вход загадку, список с возможными
+# вариантами отгадок и количество попыток на угадывание.
+# Программа возвращает номер попытки, с которой была
+# отгадана загадка или ноль, если попытки исчерпаны.
+
 from random import choice
 
 _answers_counts = {}
@@ -39,3 +45,7 @@ def many_quests(iters):
     for i in range(iters):
         question = choice(list(quests.keys()))
         quest(question, quests[question], 3)
+
+
+if __name__ == '__main__':
+    pass
