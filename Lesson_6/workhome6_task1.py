@@ -1,4 +1,5 @@
 # В модуль с проверкой даты добавьте возможность запуска в терминале с передачей даты на проверку.
+# https://github.com/PavelSBakhtin/Python-HomeWork/blob/master/home_work_6/homework6_task1.py
 
 from lesson6_modules import check_date
 from sys import argv
