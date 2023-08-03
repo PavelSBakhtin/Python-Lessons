@@ -32,7 +32,7 @@ def create_file(extention, short=6, long=30, min_bytes=256, max_bytes=4096, coun
         item += 1
     for i in names:
         size = randbytes_py38(min_bytes, max_bytes)
-        with open(f'{i}.{extention}', 'wb') as file:
+        with open(f'lesson7_task4/{i}.{extention}', 'wb') as file:
             file.write(size)
 
 
