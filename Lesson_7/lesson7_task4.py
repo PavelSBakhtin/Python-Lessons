@@ -30,8 +30,8 @@ def create_file(extention, short=6, long=30, min_bytes=256, max_bytes=4096, coun
         name = f'{item}' + ''.join(sample(ascii_letters, randint(short, long)))
         names.add(name)
         item += 1
-    size = randbytes_py38(min_bytes, max_bytes)
     for i in names:
+        size = randbytes_py38(min_bytes, max_bytes)
         with open(f'{i}.{extention}', 'wb') as file:
             file.write(size)
 
