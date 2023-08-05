@@ -9,7 +9,7 @@
 # Имя файла и его размер должны быть в рамках переданного диапазона.
 
 from string import ascii_letters
-from random import randint, sample, randrange
+from random import randint, sample
 # from random import randbytes # для версий 3.9+
 
 
@@ -36,7 +36,11 @@ def create_file(extention, short=6, long=30, min_bytes=256, max_bytes=4096, coun
             file.write(size)
 
 
-create_file('txt')
+def start():
+    create_file('txt')
+
+
+start()
 
 # def create_file(extention, short=6, long=30, min_bytes=256, max_bytes=4096, count=42):
 #     names = set()
