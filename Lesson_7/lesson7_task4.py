@@ -46,5 +46,5 @@ create_file('txt')
 #         names.add(name)
 #         item += 1
 #     for i in names:
-#         with open(f'{i}.{extention}', 'wb') as file:
+#         with open(f'{i}.{extention}', 'wb', encoding='utf_8') as file:
 #             file.write(randbytes(min_bytes, max_bytes))
