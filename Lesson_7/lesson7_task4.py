@@ -36,11 +36,8 @@ def create_file(extention, short=6, long=30, min_bytes=256, max_bytes=4096, coun
             file.write(size)
 
 
-def start():
-    create_file('txt')
+create_file('txt')
 
-
-start()
 
 # def create_file(extention, short=6, long=30, min_bytes=256, max_bytes=4096, count=42):
 #     names = set()

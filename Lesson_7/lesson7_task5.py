@@ -13,5 +13,9 @@ def make_file(**extentions):
         create_file(extention=extention, count=count)
 
 
-data = {'txt': 3, 'bmp': 4, 'png': 5}
-make_file(**data)
+def prog_start():
+    data = {'jpg': 3, 'bmp': 4, 'png': 5}
+    make_file(**data)
+
+
+prog_start()
