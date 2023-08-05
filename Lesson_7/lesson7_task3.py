@@ -16,7 +16,7 @@ def write_file():
     count = max(f1_size, f2_size)
 
     with open('lesson7_task1.txt', 'r', encoding='utf-8') as f1, \
-        open('lesson7_task2.txt', 'r', encoding='utf-8') as f2, \
+            open('lesson7_task2.txt', 'r', encoding='utf-8') as f2, \
             open('lesson7_task3.txt', 'w', encoding='utf-8') as f3:
         f1_list = cycle(f1.readlines())
         f2_list = cycle(f2.readlines())
