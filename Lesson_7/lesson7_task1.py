@@ -9,8 +9,7 @@ from random import randint, uniform
 def numbers(lines, file_name):
     with open(file_name, 'a', encoding='utf-8') as file:
         for _ in range(lines):
-            file.write(
-                f'{randint(-1000, 1000)}|{round(uniform(-1000, 1000), 3)}\n')
+            file.write(f'{randint(-1000, 1000)}|{round(uniform(-1000, 1000), 3)}\n')
 
 
 def input_mode():
