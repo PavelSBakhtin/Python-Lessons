@@ -11,7 +11,7 @@ import os
 def pickle_to_csv(file):
     path = os.getcwd()
     with open(file, 'rb') as f1, \
-            open(f'{file[:-8]}6.csv', 'w') as f2:
+            open(f'{file[:-8]}6.csv', 'w', newline='') as f2:
         data = pickle.load(f1)
         head = data.keys()
         writer = csv.writer(f2, delimiter=';')
