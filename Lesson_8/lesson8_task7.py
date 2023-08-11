@@ -5,7 +5,7 @@ import csv
 import pickle
 
 
-def csv_to_json(file):
+def csv_to_pickle(file):
     with open(file, 'r', newline='') as f:
         csv_file = csv.reader(f, delimiter=';')
         count = 0
@@ -24,6 +24,7 @@ def csv_to_json(file):
     print(f'{dict_to_print}\n')
     result = pickle.dumps(dict_to_print, protocol=pickle.DEFAULT_PROTOCOL)
     print(f'{result = }')
+    print(type(result))
 
 
-csv_to_json('lesson8_task6.csv')
+csv_to_pickle('lesson8_task6.csv')
