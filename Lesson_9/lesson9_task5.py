@@ -52,7 +52,7 @@ def call_count(num):
     return decorator
 
 
-@call_count(3)
+@call_count(1)
 @value_control
 @json_saver
 def lesson9_task5(upper_limit, attempt):
