@@ -43,6 +43,5 @@ def try_to_guess(upper_limit, attempt):
         print('Вы проиграли...\nЗагаданное число: {}'.format(number))
 
 
-upper_limit, attempt = int(input('Укажите предел: ')), int(
-    input('Количество попыток: '))
+upper_limit, attempt = int(input('Укажите предел: ')),int(input('Количество попыток: '))
 try_to_guess(upper_limit, attempt)
