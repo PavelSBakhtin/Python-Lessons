@@ -28,22 +28,7 @@
 # printer(5)
 
 
-# def call_count(num):
-#     def decorator(func):
-#         result = []
-#         def wrapper(*args, **kwargs):            
-#             for _ in range(num):
-#                 result.append(func(*args, **kwargs))
-#             return result
-#         return wrapper
-#     return decorator
 
-# @call_count(5)
-# def printer(string):
-#     print(string)
-#     return 'ok'
-
-# print(printer('сработало!'))
 
 
 # def input_checker(func):

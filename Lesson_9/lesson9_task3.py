@@ -10,12 +10,22 @@ import json
 
 def json_saver(func):
     def wrapper(*args, **kwargs):
-        with open(f'{func.__name__}.json', 'a') as file:
+        with open(f'{func.__name__}.json', 'r') as f1:
+            try:
+                data = json.load(f1)
+            except:
+                data = {1: None}
+        with open(f'{func.__name__}.json', 'w') as f2:
+            if max(data.keys()) != 1:
+                key = int(max(data.keys())) + 1
+            else:
+                key = max(data.keys())
             temp_dict = {'args': args}
             temp_dict.update(kwargs)
             result = func(*args, **kwargs)
             temp_dict['result'] = result
-            json.dump(temp_dict, file, indent=2, ensure_ascii=False)
+            data[key] = temp_dict
+            json.dump(data, f2, indent=2, ensure_ascii=False)
         return result
     return wrapper
 
@@ -25,4 +35,4 @@ def lesson9_task3(a, b, c='5'):
     return max(a, b, c)
 
 
-print(lesson9_task3(3, 5, c=7))
+print(lesson9_task3(2, 4, c=9))
