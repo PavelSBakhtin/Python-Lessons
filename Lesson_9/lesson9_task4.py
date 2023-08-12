@@ -4,10 +4,11 @@
 def call_count(num):
     def decorator(func):
         result = []
-
+        # если в for вариант №2, то - # result = []
         def wrapper(*args, **kwargs):
             for _ in range(num):
                 result.append(func(*args, **kwargs))
+                # result = func(*args, **kwargs)
             return result
         return wrapper
     return decorator

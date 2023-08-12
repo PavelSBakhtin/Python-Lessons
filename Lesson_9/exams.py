@@ -1,19 +1,3 @@
-# def json_saver(func):
-#     def wrapper(*args, **kwargs):
-#         with open(f'{func.__name__}.json', 'a') as file:
-#             temp_dict = {'args' : args}
-#             temp_dict.update(kwargs)
-#             result = func(*args, **kwargs)
-#             temp_dict['result'] =  result
-#             json.dump(temp_dict, file, indent=3, ensure_ascii=False)
-#         return result
-#     return wrapper
-
-
-# with open('example.json', 'r') as file:
-#     data = json.load(file)
-#     print(data)
-
 
 # def counter(func):
 #     def wrapper(count):
@@ -26,8 +10,6 @@
 #     print("data")
 
 # printer(5)
-
-
 
 
 
