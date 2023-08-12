@@ -39,5 +39,5 @@ def main():
     return try_to_guess
 
 
-a = main()
-a()
+game = main()
+game()
