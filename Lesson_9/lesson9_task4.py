@@ -21,3 +21,18 @@ def printer(string):
 
 
 print(printer('сработало!'))
+
+
+# # ещё пример:
+
+# def counter(func):
+#     def wrapper(count):
+#         for i in range(count):
+#             func()
+#     return wrapper
+
+# @counter
+# def printer():
+#     print("data")
+
+# printer(5)
