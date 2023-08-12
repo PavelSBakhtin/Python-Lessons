@@ -5,6 +5,7 @@
 
 from random import randint
 
+
 def main(func):
     def wrapper(upper_limit, attempt):
         if not 0 < upper_limit < 100:
@@ -13,6 +14,7 @@ def main(func):
             attempt = randint(1, 10)
         func(upper_limit, attempt)
     return wrapper
+
 
 @main
 def try_to_guess(upper_limit, attempt):
@@ -41,5 +43,6 @@ def try_to_guess(upper_limit, attempt):
         print('Вы проиграли...\nЗагаданное число: {}'.format(number))
 
 
-upper_limit, attempt = int(input('Укажите предел: ')), int(input('Количество попыток: '))
+upper_limit, attempt = int(input('Укажите предел: ')), int(
+    input('Количество попыток: '))
 try_to_guess(upper_limit, attempt)
