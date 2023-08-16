@@ -11,6 +11,7 @@ class Square:
         self.b = b
         if b is None:
             self.b = a
+        # или так:
         # self.a = a
         # if b is None:
         #     self.b = a
