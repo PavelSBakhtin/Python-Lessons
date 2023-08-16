@@ -29,25 +29,23 @@ class Dog(Animal):
         self.breed = breed
 
     def bark(self):
-        print('Bark!')
+        print('Bark !!!')
 
 
 class Raven(Animal):
     def __init__(self, name, age, color, voice):
-        super().__init__(name, age)
-        self.voice = voice
+        super().__init__(name, age, voice)
         self.color = color
 
     def fly_around_corpse(self):
-        print('oooh, meat....')
+        print('oooh, meat ...')
 
 
 fish = Fish('Nemo', 2, 'silver', 'bul-bul')
-dog = Dog('Spark', 5, 'pitbull', 'bark!')
-bird = Raven('Qarasique', 6, 'white', 'bravo!')
+dog = Dog('Spark', 5, 'pitbull', 'barky')
+bird = Raven('Qarasique', 6, 'white', 'bravo')
 
 animals = [fish, dog, bird]
-
 for i in animals:
     i.make_voice()
 
