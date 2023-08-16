@@ -18,6 +18,7 @@ class Circle:
 
 
 circle = Circle(int(input('Введите радиус: ')))
+# или так:
 # radius = int(input('Введите радиус: '))
 # circle = Circle(radius)
 print(f'Площадь: {circle.get_square()}\nДлина окружности: {circle.get_circle()}')
