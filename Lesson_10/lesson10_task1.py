@@ -10,13 +10,14 @@ class Circle:
     def __init__(self, radius):
         self.radius = radius
 
-    def get_area(self):
-        return round(pi*self.radius**2, 2)
+    def get_square(self):
+        return round(pi * self.radius ** 2, 2)
 
-    def get_perimetr(self):
-        return round(2*pi*self.radius, 2)
+    def get_circle(self):
+        return round(2 * pi * self.radius, 2)
 
 
-radius = int(input('Введите радиус: '))
-circle = Circle(radius)
-print(f'Площадь: {circle.get_area()}\nДлина окружности: {circle.get_perimetr()}')
+circle = Circle(int(input('Введите радиус: ')))
+# radius = int(input('Введите радиус: '))
+# circle = Circle(radius)
+print(f'Площадь: {circle.get_square()}\nДлина окружности: {circle.get_circle()}')
