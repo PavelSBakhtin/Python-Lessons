@@ -4,7 +4,6 @@
 
 import json
 import os.path
-
 import pytest
 
 
@@ -13,6 +12,7 @@ class UserException(Exception):
 
 
 class UserLevelError(UserException):
+
     def __init__(self, value):
         self.value = value
 
@@ -21,6 +21,7 @@ class UserLevelError(UserException):
 
 
 class UserPermissionError(UserException):
+
     def __init__(self, value):
         self.value = value
 
@@ -47,13 +48,15 @@ class Person:
 
 
 class Employee(Person):
+
     def __init__(self, firstname, lastname, sex, age, pers_id):
         if len(pers_id) != 6:
             raise ValueError('Некорректный id!')
         super().__init__(firstname, lastname, sex, age)
         self.pers_id = pers_id
         self.lvl_id = int(pers_id) % 7
-        self.json_data = {self.firstname: [lastname, sex, age, self.lvl_id, pers_id]}
+        self.json_data = {self.firstname: [
+            lastname, sex, age, self.lvl_id, pers_id]}
         self.save_in_files()
 
     def __str__(self):
@@ -89,6 +92,7 @@ def user_create():
 
 
 class Login:
+
     def user_login(self, user_name, user_id):
         with open('json_file.json', 'r') as f_read:
             data = json.load(f_read)
@@ -104,6 +108,7 @@ class Login:
         else:
             raise UserLevelError(creator_lvl)
 
+
 @pytest.fixture
 def data():
     e4 = ('Антон', 'Анатольевич', 'М', 24, '123456')
@@ -114,8 +119,10 @@ def data():
 def test_value_error():
     assert Employee('Вася', 'Иванов', 'М', 30, '123456')
 
+
 def test_user_lvl_err(data):
     assert data[1].user_creator(data[0], data[1].user_login('Антон', '123456'))
+
 
 def test_user_perm_err(data):
     assert data[1].user_login('Антон', '123456')

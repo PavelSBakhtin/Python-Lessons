@@ -2,6 +2,11 @@
 # периметр, площадь и позволяющий складывать и вычитать прямоугольники беря за основу периметр.
 # Напишите 3-7 тестов unittest для данного класса.
 
+import io
+import unittest
+from unittest.mock import patch
+
+
 class Rect:
 
     def __init__(self, a, b):
@@ -43,6 +48,7 @@ class Other:
 
 
 class TestRect(unittest.TestCase):
+    
     def test_value_error(self):
         with self.assertRaises(ValueError):
             Rect(0, 5)
@@ -59,10 +65,9 @@ class TestRect(unittest.TestCase):
     def test_fail_rect(self, mock_stdout):
         with self.assertRaises(ValueError):
             Rect(1, 1) - Rect(5, 5)
-            self.assertEquals(mock_stdout.getvalue(), 'Такой прямоугольник невозможен')
+            self.assertEquals(mock_stdout.getvalue(),
+                              'Такой прямоугольник невозможен')
 
 
 if __name__ == "__main__":
     unittest.main()
-
-
