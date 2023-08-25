@@ -17,11 +17,13 @@ def level_json():
             if not 0 < int(level) < 8:
                 print('Неверный уровень доступа')
                 continue
-            with open('lesson8_task2.json', 'r') as f1:
-                try:
+
+            try:
+                with open('lesson8_task2.json', 'r') as f1:
                     data = json.load(f1)
-                except:
-                    data = {}
+            except:
+                data = {}
+                
             if level not in data:
                 data[level] = {}
             data[level][pers_id] = name
