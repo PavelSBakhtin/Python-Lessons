@@ -9,6 +9,7 @@ import json
 from random import randint
 from faker import Faker
 
+
 def add_employee(company: str, count: int):
     employees = {}
     list_id = []
