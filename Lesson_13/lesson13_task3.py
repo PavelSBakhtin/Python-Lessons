@@ -15,4 +15,4 @@ class UserPermissionError(UserException):
     pass
 
 
-raise UserLevelError
+raise UserLevelError('текст ошибки')
